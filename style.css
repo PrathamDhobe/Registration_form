@@ -24,7 +24,6 @@ body {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 25px;
-    color: #004d25;
     text-transform: uppercase;
     text-align: center;
 }
@@ -129,8 +128,32 @@ body {
     }
 }
 
-.gb {
-    color: rgb(135, 40, 40);
-    background-color: aliceblue;
-    border: 2px solid black;
+   
+label{
+    color: #004d25;
+}
+.termsandcondtion_modal{
+    display: block;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 5px;
+    left: 35%;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    top: 40vh;
+    text-align: center;
+    
+}
+.termsandcondtion_modal h4{
+    padding: 100px ;
+}
+.cross{
+    cursor: pointer;
+    margin-left: 95%;
+}
+@media (max-width:900px) {
+    .termsandcondtion_modal{
+        left: 0;
+    }
 }

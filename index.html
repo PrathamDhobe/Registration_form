@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="x-icon" href="logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -37,6 +38,7 @@
                         <option value="">Select</option>
                         <option value="">Male</option>
                         <option value="">Female</option>
+                        <option value="">Trans</option>
                     </select>
                 </div>
             </div>
@@ -61,7 +63,6 @@
                 <input type="checkbox">
                 <span class="checkmark"></span>
                </label>
-                <p>Agreed terms and conditions</p>
             </div>
             <div class="input_field">
                 <input type="submit" value="Register" class="btn">
@@ -69,9 +70,16 @@
         </div>
     </div>
 
-
-    <p class="gb">these is registration form</p>
-
+    <div class="termsandcondtion_modal">
+        <div class="cross" onclick="closemodal()"><i class="fa fa-close" style="font-size:24px"></i></div>
+        <h4>We are going to still your data please give us permission by clicking on agree </h4>
+    </div>
+    
 </body>
+<script>
+    const closemodal=()=>{
+        let changes= document.getElementsByClassName("termsandcondtion_modal")[0].style.display = "none";
+    }
+</script>
 
 </html>
